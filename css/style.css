@@ -673,7 +673,6 @@ footer img {
 
   .you-are-beloved p {
     margin: 9% 0 0 0;
-    font-size: 1.1rem;
   }
 
   .facebook h2 {
@@ -681,7 +680,7 @@ footer img {
   }
 
   .facebook p {
-    font-size: 1.1rem;
+    font-size: .9rem;
   }
 
   .address-text {
@@ -827,7 +826,6 @@ footer img {
   }
 
   .facebook article p {
-    font-size: 1.2rem;
     margin: 0 0 3% 0;
   }
 
