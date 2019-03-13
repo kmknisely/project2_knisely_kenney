@@ -1,0 +1,914 @@
+/***********
+
+Table of Contents:
+
+)Font Declarations
+)Reset and General
+)Links
+)Header
+)Hamburger Menu
+)Splash Images
+)Homepage Styling
+)About Page Styling
+)Worship Page Styling
+)Contact Page Styling
+)Footer
+)Parallax Plugin Styles
+)Media Queries
+
+
+
+Fonts:
+font-family: 'SukText', sans-serif;
+font-family: maryam, sans-serif;
+
+Colors:
+Logo Blue - #6D97BC
+Header Blue- #92CBD7
+Text Grey - #939598
+
+***********/
+
+
+/*********** Font Declarations ***********/
+
+@font-face {
+    font-family: 'SukThin';
+    src: url('fonts/SukhumvitSet-Thin.ttf')
+}
+
+@font-face {
+    font-family: 'SukLight';
+    src: url('fonts/SukhumvitSet-Light.ttf')
+}
+
+@font-face {
+    font-family: 'SukText';
+    src: url('fonts/SukhumvitSet-Text.ttf')
+}
+
+@font-face {
+    font-family: 'SukMedium';
+    src: url('fonts/SukhumvitSet-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'SukSemi';
+    src: url('fonts/SukhumvitSet-SemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'SukBold';
+    src: url('fonts/SukhumvitSet-Bold.ttf')
+}
+
+/**********************/
+
+
+/*********** Reset and General ***********/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+  font-family: 'SukThin', sans-serif;
+  color: #939598;
+}
+
+article {
+  padding: 5% 0 5% 0;
+}
+
+h2{
+  font-family: 'maryam', sans-serif;
+  font-weight: lighter;
+  color: #92CBD7;
+  font-size: 3.5rem;
+  margin: 0 3% 5% 3%;
+}
+
+p {
+  font-size: .7rem;
+  margin: 3%;
+}
+
+.desktop-pic {
+  display: none;
+}
+
+/**********************/
+
+
+/*********** Links ***********/
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/**********************/
+
+
+/*********** Header ***********/
+
+header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  position:relative;
+  z-index: 2;
+}
+
+.logo-flat {
+  display: none;
+}
+
+.blue-head{
+  background-color: #6D97BC;
+}
+
+.blue-head img {
+  width: 6%;
+  margin: 1% 0 0 2%;
+  padding: .5%;
+  max-width: 30px;
+}
+
+.head-links {
+  font-size: .8rem;
+  color: white;
+  float: right;
+  margin: 2%
+}
+.head-links a {
+  color: white;
+}
+
+.logo-stacked{
+  width: 40%;
+  max-width: 194px;
+  margin: 8% 0 0 3%;
+}
+
+/**********************/
+
+
+/*********** Hamburger Menu ***********/
+
+.desktop-menu {
+	display: none;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:48%;
+  right:4%;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color: #6D97BC;
+  border:0;
+  font-size:3rem;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:60%;
+  right:5%;
+  padding:7px 15px 0px 15px;
+  color: #6D97BC;
+  border:0;
+  font-size:5rem;
+  line-height:65px;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{
+	z-index:1000000;
+	font-weight:bold;
+	font-size:0.8em;
+	width:100%;
+	background:#f1f1f1;
+	position:absolute;
+	text-align:center;
+	font-size:.75rem;
+ }
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: block;
+	padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+.menu li:hover{
+	display: block;
+	background:#ffffff;
+	padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+.menu ul li a {
+	text-decoration:none;
+	margin: 0px;
+	color:#666;
+}
+.menu ul li a:hover {
+	color: #666;
+	text-decoration: none;
+}
+.menu a{
+	text-decoration:none;
+	color:#666;
+}
+.menu a:hover{
+	text-decoration:none;
+	color:#666;
+}
+/**********************/
+
+
+/*********** Splash Images ***********/
+
+.splash {
+  width: 100%;
+  position:relative;
+  z-index: 1;
+  display:block;
+}
+
+
+.splash-background {
+  width: 100%;
+  display:block;
+}
+
+.overlay-logo {
+  position: absolute;
+  display: block;
+  top: 14%;
+  left: 23%;
+  width: 50%;
+  height: auto;
+}
+
+/**********************/
+
+
+/*********** Homepage Styling ***********/
+
+
+.blue-info{
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4);
+  background-color: #6D97BC;
+}
+
+.blue-info p {
+  text-align: center;
+  margin: 0;
+  padding: 2% 3%;
+  color: white;
+  line-height: 2em;
+}
+
+.you-are-beloved {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.you-are-beloved h2 {
+  margin: 0;
+  font-size: 3rem;
+  padding: 12% 0 0% 3%;
+}
+
+
+.you-are-beloved article {
+  width: 45%;
+  float: left;
+  padding: 0% 2% 0 5%;
+}
+
+.you-are-beloved p {
+  font-size: .5rem;
+}
+
+.you-are-beloved img {
+  width: 43%;
+  float: right;
+}
+
+/* Added this to put the children back into the parent element*/
+.you-are-beloved::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.address {
+  position: relative;
+  width: 100%
+}
+
+.address img  {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.address-text {
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  left: 26%;
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.address-text span {
+  letter-spacing: .2em;
+}
+
+.address-text p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.facebook {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.facebook img {
+  width: 43%;
+  float: left;
+
+}
+
+.facebook article {
+  text-align: center;
+}
+
+.facebook article h2 {
+  margin: 0;
+  padding: 3% 0 0 0;
+}
+
+.facebook article p {
+  margin: 0 0 5% 0;
+}
+
+
+.facebook a span {
+  padding: 1.5% 4%;
+  background-color: #6D97BC;
+  color: white;
+  border-radius: 10%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.facebook::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**********************/
+
+
+/*********** About Page Styling ***********/
+
+.about {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.about figure{
+  width: 40%;
+  max-width: 400px;
+  float:right;
+  padding: 0 5% 0 5%;
+}
+
+.about figure img {
+  width: 100%;
+}
+
+.about figure figcaption{
+  font-size: .5rem;
+  text-align: center;
+}
+
+.top-shadow {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4);
+}
+
+/**********************/
+
+
+/*********** Worship Page Styling ***********/
+
+.worship aside {
+  background-color: #e6edf4;
+  margin: 2%;
+  padding: 2%;
+}
+
+/**********************/
+
+/*********** Contact Page Styling ***********/
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact a {
+  color:#6D97BC;
+}
+
+/**********************/
+
+
+/*********** Footer ***********/
+
+footer {
+  background-color: #6D97BC;
+  color: white;
+  text-align: center;
+  font-size: 2.9vw;
+  padding: 5%;
+}
+
+footer img {
+  display: block;
+  width: 70%;
+  margin: 3% auto;
+
+}
+
+/**********************/
+
+
+/*********** Parallax Plugin Styles ***********/
+
+.parallax-container-main {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.parallax-container-main .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container-main .parallax img {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.parallax-container-address {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+}
+
+.parallax-container-address .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container-address .parallax img {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/**********************/
+
+
+
+/*********** Media Queries ***********/
+
+@media (min-width: 400px) {
+
+  .parallax-container-main {
+    height: 310px;
+  }
+
+
+}
+
+@media (min-width: 500px) {
+
+  .parallax-container-main {
+    height: 320px;
+  }
+
+  .overlay-logo {
+    width: 40%;
+    top: 17%;
+    left: 32%;
+  }
+
+  .parallax-container-address {
+    height: 250px;
+
+
+}
+
+@media (min-width: 550px) {
+
+  .parallax-container-main {
+    height: 350px;
+  }
+
+  .overlay-logo {
+    width: 40%;
+    top: 17%;
+    left: 32%;
+  }
+
+
+}
+
+@media (min-width: 600px) {
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+
+  .parallax-container-main {
+    height: 400px;
+  }
+  .overlay-logo {
+    width: 40%;
+    top: 17%;
+    left: 32%;
+  }
+
+  .hamburger{
+    top: 60%;
+  }
+
+  .cross {
+    top:80%;
+  }
+
+  .you-are-beloved h2 {
+    font-size: 5rem;
+  }
+
+  .you-are-beloved p {
+    font-size: .9rem;
+  }
+
+  .address-text {
+    font-size: 2.2rem;
+  }
+
+  .address-text p {
+    font-size: 2.2rem;
+  }
+
+  .facebook p {
+    padding: 0 5% 0 50%;
+  }
+
+}
+
+@media (min-width: 760px) {
+
+  .parallax-container-main {
+    height: 400px;
+  }
+  .overlay-logo {
+    width: 35%;
+    top: 17%;
+    left: 32%;
+  }
+
+  .hamburger{
+    top: 65%;
+  }
+
+  .cross {
+    top:75%;
+  }
+
+  .you-are-beloved h2 {
+    margin: 7% 0 0 0;
+    font-size: 6rem;
+  }
+
+  .you-are-beloved p {
+    margin: 9% 0 0 0;
+    font-size: 1.1rem;
+  }
+
+  .facebook h2 {
+    font-size: 7rem;
+  }
+
+  .facebook p {
+    font-size: 1.1rem;
+  }
+
+  .address-text {
+    left: 32%;
+
+}
+
+
+
+
+@media (min-width: 900px) {
+
+  header::after{
+    clear: both;
+    content: "";
+    display: table;
+    }
+
+  h2{
+    font-size: 5rem;
+    margin: 0 3% 5% 3%;
+  }
+
+  p{
+    font-size: 1.2rem ;
+    margin: 3%;
+  }
+
+  .blue-head img {
+    width: 6%;
+    max-width:30px;
+    margin: 0 0 0 2%;
+    padding: .5% .5% 0 .5%;
+  }
+
+  .head-links {
+    font-size: 1rem;
+    color: white;
+    float: right;
+    margin: 1% 2% 0 0;
+  }
+
+  .logo-stacked {
+    display: none;
+  }
+  .logo-flat {
+    display: inline;
+    width: 40%;
+    max-width: 440px;
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 .5% 3%;
+  }
+
+  .menu, .hamburger, .cross {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+    float: right;
+    clear: right;
+    margin: 7% 1% 0 0;
+  }
+  .desktop-menu ul {
+    list-style-type: none;
+  }
+
+  .desktop-menu ul li{
+    display: inline;
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .desktop-menu ul li a{
+    color: #92CBD7;
+  }
+
+  .desktop-menu ul li a:hover{
+    color: #6D97BC;
+  }
+
+  .parallax-container-main {
+    height: 580px;
+  }
+
+  .overlay-logo {
+    width: 35%;
+    top: 17%;
+    left: 32%;
+  }
+
+  .blue-info p {
+    padding: 4% 2%;
+    font-size: 1rem;
+  }
+
+  .phone-pic {
+    display: none;
+  }
+
+  .desktop-pic {
+    display: block;
+  }
+
+  .you-are-beloved h2 {
+    font-size: 5rem;
+    padding: 8% 0 7% 0;
+  }
+
+  .you-are-beloved article {
+    width: 40%;
+    float: left;
+    font-size: 1rem;
+    padding: 5% 2% 0 5%;
+    line-height: 1.5em;
+  }
+
+  .you-are-beloved .desktop-pic {
+    width: 45%
+  }
+
+  .parallax-container-address {
+    height: 250px;
+  }
+
+  .address-text {
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    left: 32%;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .address-text p {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .facebook article h2 {
+    font-size: 7rem;
+  }
+
+  .facebook article p {
+    font-size: 1.2rem;
+    margin: 0 0 3% 0;
+  }
+
+  .facebook a span {
+    padding: 1% 4%;
+    font-size: 1rem;
+    border-radius: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .facebook a span:hover {
+    background-color: #92CBD7;
+  }
+
+
+  .about figure figcaption{
+    font-size: 1rem;
+  }
+
+
+  footer {
+    font-size: 1rem;
+    padding: 3% 5%;
+  }
+
+  footer img {
+    display: block;
+    width: 50%;
+    margin: 3% auto;
+
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .parallax-container-main {
+    height: 600px;
+  }
+
+  .overlay-logo {
+    top: 15%;
+  }
+
+  .blue-info p {
+    padding: 4% 3%;
+    font-size: 1.2rem;
+  }
+
+  .you-are-beloved h2 {
+    font-size: 7rem;
+    padding: 10% 0 7% 0;
+  }
+
+  .you-are-beloved article {
+    font-size: 1.2rem;
+  }
+
+
+  .facebook article p {
+    font-size: 1.2rem;
+  }
+
+  .facebook a span {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .parallax-container-main {
+    height: 700px;
+  }
+
+}
+
+@media (min-width: 1800px) {
+  .parallax-container-main {
+    height: 800px;
+  }
+
+}
+
+/**********************/
