@@ -765,7 +765,7 @@ footer img {
   }
 
   .parallax-container-main {
-    height: 580px;
+    height: 450px;
   }
 
   .overlay-logo {
@@ -865,11 +865,11 @@ footer img {
 @media (min-width: 1200px) {
 
   .parallax-container-main {
-    height: 600px;
+    height: 580px;
   }
 
   .overlay-logo {
-    top: 15%;
+    max-width: 414.75px;
   }
 
   .blue-info p {
@@ -897,18 +897,5 @@ footer img {
 
 }
 
-@media (min-width: 1400px) {
-  .parallax-container-main {
-    height: 700px;
-  }
-
-}
-
-@media (min-width: 1800px) {
-  .parallax-container-main {
-    height: 800px;
-  }
-
-}
 
 /**********************/
