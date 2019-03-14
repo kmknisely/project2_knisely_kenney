@@ -7,5 +7,5 @@
 
 	AOS.init({
     offset: 0,
-    delay: 50
+    delay: 150
   });
