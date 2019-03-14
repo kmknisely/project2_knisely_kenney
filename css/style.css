@@ -744,6 +744,7 @@ footer img {
     float: right;
     clear: right;
     margin: 7% 1% 0 0;
+    text-transform: uppercase;
   }
   .desktop-menu ul {
     list-style-type: none;
