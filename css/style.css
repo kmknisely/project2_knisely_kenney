@@ -758,10 +758,12 @@ footer img {
 
   .desktop-menu ul li a{
     color: #92CBD7;
+    transition: .2s;
   }
 
   .desktop-menu ul li a:hover{
     color: #6D97BC;
+    transition: .2s;
   }
 
   .parallax-container-main {
@@ -835,9 +837,11 @@ footer img {
     font-size: 1rem;
     border-radius: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transition: .2s;
   }
 
   .facebook a span:hover {
+    transition: .2s;
     background-color: #92CBD7;
   }
 
