@@ -5,4 +5,7 @@
   //This is required for the materialize plug-in which makes parallax
 
 
-	AOS.init();
+	AOS.init({
+    offset: 0,
+    delay: 50
+  });
